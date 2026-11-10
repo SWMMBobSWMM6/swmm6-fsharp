@@ -1,0 +1,4 @@
+#!/bin/bash
+# The SWMM6 reference engine, held to one thread: OpenMP may not start a second one, whatever the model's
+# [OPTIONS] THREADS says, so every run of a model gives the same bits.
+exec env OMP_NUM_THREADS=1 OMP_THREAD_LIMIT=1 OMP_DYNAMIC=false "$(dirname "$(readlink -f "$0")")/openswmm" "$@"

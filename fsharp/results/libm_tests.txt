@@ -1,0 +1,47 @@
+== vectors.bin
+exp       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.078 us/call)
+log       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.056 us/call)
+log10     0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.063 us/call)
+pow       0 of 1000272 differ, 0 NaN sign, 0 NaN payload   (0.084 us/call)
+sin       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.071 us/call)
+cos       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.068 us/call)
+tan       0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.074 us/call)
+asin      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.068 us/call)
+acos      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.066 us/call)
+atan      0 of 1000016 differ, 0 NaN sign, 0 NaN payload   (0.069 us/call)
+fma       skipped (1000256 records; the F# port does not call it)
+== edge.bin
+exp       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.072 us/call)
+log       0 of 200000 differ, 0 NaN sign, 0 NaN payload   (0.059 us/call)
+log10     0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.058 us/call)
+pow       0 of 700000 differ, 0 NaN sign, 0 NaN payload   (0.096 us/call)
+sin       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.083 us/call)
+cos       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.135 us/call)
+tan       0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.075 us/call)
+asin      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.049 us/call)
+acos      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.052 us/call)
+atan      0 of 300000 differ, 0 NaN sign, 0 NaN payload   (0.050 us/call)
+== vectors2.bin
+cbrt      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.064 us/call)
+hypot     0 of 1001681 differ, 0 NaN sign, 0 NaN payload   (0.068 us/call)
+atan2     0 of 1001681 differ, 0 NaN sign, 0 NaN payload   (0.081 us/call)
+cosh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.045 us/call)
+sinh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.058 us/call)
+tanh      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.057 us/call)
+log2      0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.062 us/call)
+expm1     0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.051 us/call)
+log1p     0 of 1008555 differ, 0 NaN sign, 0 NaN payload   (0.046 us/call)
+frexp     skipped (1000041 records; the F# port does not call it)
+ldexp     skipped (1000369 records; the F# port does not call it)
+== exact.bin
+sqrt      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.045 us/call)
+floor     0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.039 us/call)
+ceil      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.038 us/call)
+trunc     0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.068 us/call)
+fabs      0 of 1000028 differ, 0 NaN sign, 0 NaN payload   (0.042 us/call)
+copysign  0 of 1000784 differ, 0 NaN sign, 0 NaN payload   (0.054 us/call)
+records checked: 28364587
+
+real	0m6.541s
+user	0m5.463s
+sys	0m0.957s

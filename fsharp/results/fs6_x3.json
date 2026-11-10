@@ -1,0 +1,14 @@
+[
+ {
+  "id": "xb7c281a4a18",
+  "path": "/tmp/claude-0/-home-claude/9f3dde4c-f353-52c4-b476-e410dd8d4e21/scratchpad/swmm6/eng/tests/unit/engine/data/refactored_small.inp",
+  "status": "PASS",
+  "sec": 382.425,
+  "rc": 0,
+  "first_rpt_diff": null,
+  "stderr": "",
+  "ref_rc": 0,
+  "rpt_sha256": "045fe75284e12a1b305ac6955b363249967b411d581197ad4adc1b0e123f352d",
+  "out_sha256": "9ae85273ca2425034feb5044b8b4ed4a307aab51b278626dba91b309428078c6"
+ }
+]

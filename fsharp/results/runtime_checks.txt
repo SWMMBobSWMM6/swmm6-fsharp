@@ -1,0 +1,64 @@
+== compiling the F# runtime (fsharp/runtime) as a library
+== crtcheck: the C library against glibc, and against the C# runtime case by case
+function      cases   mismatch  NaN-sign  max ulp  first mismatch (x, y: glibc vs .NET)
+atan2        300576          0         0        0  
+cbrt         300576          0         0        0  
+cosh         300576          0         0        0  
+sinh         300576          0         0        0  
+tanh         300576          0         0        0  
+log2         300576          0         0        0  
+expm1        300576          0         0        0  
+log1p        300576          0         0        0  
+hypot        300576          0         0        0  
+fmod         300576          0         0        0  
+remainder    300576          0         0        0  
+round        300576          0         0        0  
+nextafter    300576          0         0        0  
+exp          300576          0         0        0  
+log          300576          0         0        0  
+pow          300576          0         0        0  
+sin          300576          0         0        0  
+cos          300576          0         0        0  
+tan          300576          0         0        0  
+asin         300576          0         0        0  
+acos         300576          0         0        0  
+atan         300576          0         0        0  
+log10        300576          0         0        0  
+floor        300576          0         0        0  
+ceil         300576          0         0        0  
+trunc        300576          0         0        0  
+sqrt         300576          0         0        0  
+total mismatches: 0
+printf, F# runtime against glibc: printf cases: 179756, mismatches: 4350
+printf, C# runtime against glibc: printf cases: 179756, mismatches: 4350
+  printf results (179756 cases), C# and F# runtimes: identical
+scanf, F# runtime against glibc: scanf cases: 1728, mismatches: 27
+scanf, C# runtime against glibc: scanf cases: 1728, mismatches: 27
+  scanf results (1728 cases), C# and F# runtimes: identical
+misc, F# runtime against glibc: misc cases: 752, mismatches: 2
+misc, C# runtime against glibc: misc cases: 752, mismatches: 2
+  misc results (752 cases), C# and F# runtimes: identical
+units, F# runtime: units cases: 57, failures: 3
+  FAIL strtod nan payload []
+  FAIL fprintf types [ab    | -5| 1.25|18446744073709551615|7|4294967295|-3|ffffffffffffffff|z
+  FAIL remove []
+units, C# runtime: units cases: 57, failures: 3
+  units output, C# and F# runtimes: identical
+== sort and hash: StdAlgo, the hash tables and std::hash against libstdc++
+sort cases: 6447
+  sort, stable_sort, partial_sort permutations, libstdc++ and F#: identical
+hash lines: 167
+  unordered_map / unordered_set order and std::hash, libstdc++ and F#: identical
+== streams and file system against libstdc++ and the C# runtime
+section a: 2963 lines
+  C# and F#: identical
+  C++ and F#: identical but for the glibc %#g quirk line (printf "%#.2g" of 99.995)
+section b: 86 lines
+  C# and F#: identical
+section c: cur at8 300000 tellg 12 g---
+  C++ and F#: identical
+  C# and F#: identical
+== core: Vec, iterators, pointers, Str, CPtr, Pair, Opt, ... against the C# runtime
+lines: 128
+  core output, C# and F#: identical
+exit=0

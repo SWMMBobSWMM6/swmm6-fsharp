@@ -1,0 +1,36 @@
+function   C++ engine   dlsym (what .NET's DllImport binds)
+exp        GLIBC_2.29   same
+log        GLIBC_2.29   same
+log10      GLIBC_2.2.5  same
+pow        GLIBC_2.29   same
+sin        GLIBC_2.2.5  same
+cos        GLIBC_2.2.5  same
+tan        GLIBC_2.2.5  same
+asin       GLIBC_2.2.5  same
+acos       GLIBC_2.2.5  same
+atan       GLIBC_2.2.5  same
+atan2      GLIBC_2.2.5  same
+log2       GLIBC_2.29   same
+sinh       GLIBC_2.2.5  same
+tanh       GLIBC_2.2.5  same
+expm1      GLIBC_2.2.5  same
+log1p      GLIBC_2.2.5  same
+cosh       GLIBC_2.2.5  same
+cbrt       GLIBC_2.2.5  same
+hypot      GLIBC_2.35   same
+fmod       GLIBC_2.38   same
+round      GLIBC_2.2.5  same
+lround     GLIBC_2.2.5  same
+rint       GLIBC_2.2.5  (not imported by the C++ engine)
+nearbyint  GLIBC_2.2.5  (not imported by the C++ engine)
+erf        GLIBC_2.2.5  (not imported by the C++ engine)
+erfc       GLIBC_2.2.5  (not imported by the C++ engine)
+tgamma     GLIBC_2.2.5  (not imported by the C++ engine)
+lgamma     GLIBC_2.23   (not imported by the C++ engine)
+exp2       GLIBC_2.29   (not imported by the C++ engine)
+remainder  GLIBC_2.2.5  same
+fdim       GLIBC_2.2.5  (not imported by the C++ engine)
+fmax       GLIBC_2.2.5  (not imported by the C++ engine)
+fmin       GLIBC_2.2.5  (not imported by the C++ engine)
+nextafter  GLIBC_2.2.5  same
+functions: 34; imported by the C++ engine: 24

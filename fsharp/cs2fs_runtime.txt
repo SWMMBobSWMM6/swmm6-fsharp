@@ -1,0 +1,584 @@
+     6  conversion Cpp.CPtr.op_Implicit(Cpp.Ptr<byte>)
+     2  conversion Cpp.CPtr.op_Implicit(Cpp.Ptr<sbyte>)
+     1  conversion Cpp.Ptr<T>.op_Implicit(Cpp.Iter<double>)
+   196  conversion Cpp.Str.op_Implicit(Cpp.CPtr)
+    28  field Cpp.Atomic<T>.v
+     4  field Cpp.CSpan<T>.a
+     4  field Cpp.CSpan<T>.n
+     4  field Cpp.CSpan<T>.o
+    13  field Cpp.FromCharsResult.ec
+    12  field Cpp.FromCharsResult.ptr
+    10  field Cpp.Iter<T>.a
+    20  field Cpp.Iter<T>.i
+    16  field Cpp.Opt<T>.has
+    21  field Cpp.Opt<T>.val
+    39  field Cpp.Pair<A, B>.first
+   108  field Cpp.Pair<A, B>.second
+    29  field Cpp.Str.b
+    29  field Cpp.Str.n
+   665  field Cpp.Vec<T>.a
+   650  field Cpp.Vec<T>.n
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<Cpp.Str, int>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<Cpp.Str, openswmm.components.ProcessComponentEntry>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<Cpp.Str, openswmm.mathexpr.TokenType>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<Cpp.Str, openswmm.surface.MeshSnowRow>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<int, Cpp.Vec<Cpp.Pair<int, int>>>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<int, int>>
+     1  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<int, openswmm.surface.MeshSnowRow>>
+     2  foreach over System.Collections.Generic.IEnumerable<Cpp.Pair<ulong, Cpp.Vec<ulong>>>
+     1  interface Cpp.IBinFn<K>.Call2
+   598  interface Cpp.ICopy<T>.Assign
+   598  interface Cpp.ICopy<T>.Clone
+     1  interface Cpp.IHashFn<K>.HashOf
+    20  interface System.IDisposable.Dispose
+     7  method Cpp.Algo.accumulate(Cpp.Iter<double>, Cpp.Iter<double>, double)
+     5  method Cpp.Algo.all_of(Cpp.Iter<T>, Cpp.Iter<T>, System.Func<T, bool>)
+    33  method Cpp.Algo.any_of(Cpp.Iter<T>, Cpp.Iter<T>, System.Func<T, bool>)
+     5  method Cpp.Algo.begin(T[])
+     2  method Cpp.Algo.copy_n(Cpp.Ptr<T>, ulong, Cpp.Ptr<T>)
+    17  method Cpp.Algo.copy(Cpp.Iter<T>, Cpp.Iter<T>, Cpp.Iter<T>)
+     3  method Cpp.Algo.count(Cpp.Iter<T>, Cpp.Iter<T>, T)
+     5  method Cpp.Algo.end(T[])
+     1  method Cpp.Algo.fill_n(Cpp.Ptr<T>, ulong, T)
+   211  method Cpp.Algo.fill(Cpp.Iter<T>, Cpp.Iter<T>, T)
+     3  method Cpp.Algo.fill(Cpp.Ptr<T>, Cpp.Ptr<T>, T)
+     2  method Cpp.Algo.find_if(Cpp.Iter<T>, Cpp.Iter<T>, System.Func<T, bool>)
+     7  method Cpp.Algo.find(Cpp.Iter<T>, Cpp.Iter<T>, T)
+     1  method Cpp.Algo.iota(Cpp.Iter<ulong>, Cpp.Iter<ulong>, ulong)
+     2  method Cpp.Algo.is_sorted(Cpp.Iter<T>, Cpp.Iter<T>)
+     9  method Cpp.Algo.lower_bound(Cpp.Iter<T>, Cpp.Iter<T>, T)
+     4  method Cpp.Algo.lower_bound(Cpp.Iter<T>, Cpp.Iter<T>, V, System.Func<T, V, bool>)
+     3  method Cpp.Algo.max_element(Cpp.Iter<T>, Cpp.Iter<T>)
+     2  method Cpp.Algo.min_element(Cpp.Iter<T>, Cpp.Iter<T>)
+     3  method Cpp.Algo.none_of(Cpp.Iter<T>, Cpp.Iter<T>, System.Func<T, bool>)
+     1  method Cpp.Algo.replace(Cpp.Iter<T>, Cpp.Iter<T>, T, T)
+     5  method Cpp.Algo.transform(Cpp.Iter<byte>, Cpp.Iter<byte>, Cpp.Iter<byte>, System.Func<byte, sbyte>)
+     3  method Cpp.Algo.transform(Cpp.Iter<T>, Cpp.Iter<T>, Cpp.Iter<U>, System.Func<T, U>)
+     2  method Cpp.Algo.unique(Cpp.Iter<T>, Cpp.Iter<T>)
+     2  method Cpp.Algo.upper_bound(Cpp.Iter<T>, Cpp.Iter<T>, T)
+     6  method Cpp.Algo.VecFrom(Cpp.Iter<T>, Cpp.Iter<T>)
+   111  method Cpp.Arr.Assign(T[], T[])
+   189  method Cpp.Arr.Clone(T[])
+     2  method Cpp.Arr.Eq(T[], T[])
+   236  method Cpp.Arr.Make(int)
+     5  method Cpp.Arr.Make2(int, int)
+     1  method Cpp.Arr.MakeWith(int, System.Func<T>)
+     1  method Cpp.Atomic<T>.compare_exchange(ref T, T)
+     4  method Cpp.Atomic<T>.fetch_add(T, int)
+     2  method Cpp.Box<T>.Of(Cpp.RefGet<T>)
+     1  method Cpp.Bytes.View(Cpp.CPtr)
+   111  method Cpp.Bytes.View(Cpp.Ptr<T>)
+    78  method Cpp.Conv.D2I(double)
+    11  method Cpp.Conv.D2L(double)
+     1  method Cpp.Conv.D2SB(double)
+     4  method Cpp.Conv.D2UL(double)
+    14  method Cpp.CppException.what()
+     5  method Cpp.CPtr.Clone()
+    10  method Cpp.CPtr.Diff(Cpp.CPtr, Cpp.CPtr)
+     2  method Cpp.CSpan<T>.empty()
+    30  method Cpp.Dbg.Caught(System.Exception)
+     1  method Cpp.Defer.Cancel()
+    43  method Cpp.Dtor.Run(object?)
+     1  method Cpp.Duration.Clone()
+     1  method Cpp.Duration.count()
+     5  method Cpp.ErrorCode.Bool()
+     1  method Cpp.Fs.create_hard_link(Cpp.FsPath, Cpp.FsPath, Cpp.ErrorCode)
+     2  method Cpp.Fs.equivalent(Cpp.FsPath, Cpp.FsPath)
+     1  method Cpp.Fs.exists(Cpp.FsPath, Cpp.ErrorCode)
+     1  method Cpp.Fs.file_size(Cpp.FsPath, Cpp.ErrorCode)
+     1  method Cpp.Fs.file_size(Cpp.FsPath)
+     2  method Cpp.Fs.is_directory(Cpp.FsPath)
+     2  method Cpp.Fs.is_regular_file(Cpp.FileStatus)
+     3  method Cpp.Fs.remove(Cpp.FsPath, Cpp.ErrorCode)
+     1  method Cpp.Fs.rename(Cpp.FsPath, Cpp.FsPath, Cpp.ErrorCode)
+     1  method Cpp.Fs.symlink_status(Cpp.FsPath, Cpp.ErrorCode)
+     2  method Cpp.Fs.symlink_status(Cpp.FsPath)
+     1  method Cpp.Fs.weakly_canonical(Cpp.FsPath)
+    12  method Cpp.FsPath.Assign(Cpp.FsPath)
+     1  method Cpp.FsPath.c_str()
+     3  method Cpp.FsPath.clear()
+    17  method Cpp.FsPath.Clone()
+     3  method Cpp.FsPath.compare(Cpp.FsPath)
+     4  method Cpp.FsPath.empty()
+     1  method Cpp.FsPath.extension()
+     1  method Cpp.FsPath.generic_string()
+     3  method Cpp.FsPath.is_relative()
+     8  method Cpp.FsPath.Join(Cpp.FsPath)
+     4  method Cpp.FsPath.lexically_normal()
+     4  method Cpp.FsPath.MoveFrom(Cpp.FsPath)
+     3  method Cpp.FsPath.parent_path()
+     3  method Cpp.FsPath.replace_extension(Cpp.FsPath?)
+     6  method Cpp.FsPath.string()
+     8  method Cpp.HashTable<K, E>.clear()
+     2  method Cpp.HashTable<K, E>.contains(K)
+     3  method Cpp.HashTable<K, E>.count(K)
+    40  method Cpp.HashTable<K, E>.end()
+     1  method Cpp.HashTable<K, E>.erase(Cpp.MIt<E>)
+    40  method Cpp.HashTable<K, E>.find(K)
+     3  method Cpp.HashTable<K, E>.Items()
+     4  method Cpp.HashTable<K, E>.reserve(ulong)
+     1  method Cpp.HashTable<K, E>.size()
+     5  method Cpp.IFStream.is_open()
+     1  method Cpp.IosBase.bad()
+     1  method Cpp.IosBase.clear(int)
+     1  method Cpp.IosBase.eof()
+    23  method Cpp.IosBase.good()
+     2  method Cpp.IosBase.imbue(object?)
+    17  method Cpp.IosBase.notok()
+    19  method Cpp.IosBase.ok()
+     1  method Cpp.IStream.gcount()
+     9  method Cpp.IStream.Get(Cpp.Str)
+    10  method Cpp.IStream.Get(ref double)
+     3  method Cpp.IStream.Get(ref int)
+     1  method Cpp.IStream.Get(ref uint)
+     1  method Cpp.IStream.Get(ref ulong)
+     2  method Cpp.IStream.Manip_ws()
+    11  method Cpp.IStream.read(Cpp.CPtr, long)
+    11  method Cpp.IStream.read(Cpp.Ptr<T>, long)
+     5  method Cpp.IStream.seekg(long, int)
+     1  method Cpp.IStream.tellg()
+   226  method Cpp.Iter<T>.Clone()
+     7  method Cpp.LibM.expm1(double)
+     5  method Cpp.LibM.fmod(double, double)
+     5  method Cpp.LibM.hypot(double, double)
+     1  method Cpp.LibM.log1p(double)
+     1  method Cpp.LibM.nextafter(double, double)
+     1  method Cpp.LibM.remainder(double, double)
+     5  method Cpp.LibM.round(double)
+    54  method Cpp.M.clamp(double, double, double)
+     2  method Cpp.M.clamp(int, int, int)
+   563  method Cpp.M.max(double, double)
+    17  method Cpp.M.max(double[])
+    56  method Cpp.M.max(int, int)
+     1  method Cpp.M.max(int[])
+     3  method Cpp.M.max(long, long)
+     5  method Cpp.M.max(uint, uint)
+     4  method Cpp.M.max(ulong, ulong)
+     3  method Cpp.M.min(byte, byte)
+   310  method Cpp.M.min(double, double)
+     2  method Cpp.M.min(double[])
+    31  method Cpp.M.min(int, int)
+    14  method Cpp.M.min(ulong, ulong)
+     9  method Cpp.Map<K, V>.Assign(Cpp.Map<K, V>)
+    13  method Cpp.Map<K, V>.Clone()
+     5  method Cpp.Map<K, V>.emplace(K, V)
+     4  method Cpp.Map<K, V>.empty()
+    12  method Cpp.Map<K, V>.end()
+    12  method Cpp.Map<K, V>.find(K)
+    11  method Cpp.Map<K, V>.Index(K)
+     6  method Cpp.Map<K, V>.Items()
+     1  method Cpp.Map<K, V>.size()
+     6  method Cpp.Mem.Calloc(ulong, ulong)
+     3  method Cpp.Mem.Diff(T, Cpp.Ptr<T>)
+     4  method Cpp.Mem.fread(Cpp.CPtr, ulong, ulong, Cpp.CFile)
+     3  method Cpp.Mem.fread(Cpp.Ptr<T>, ulong, ulong, Cpp.CFile)
+    12  method Cpp.Mem.Free(object?)
+     4  method Cpp.Mem.fwrite(Cpp.CPtr, ulong, ulong, Cpp.CFile)
+     4  method Cpp.Mem.fwrite(Cpp.Ptr<T>, ulong, ulong, Cpp.CFile)
+    52  method Cpp.Mem.memcpy(Cpp.Ptr<T>, Cpp.CPtr, ulong)
+     3  method Cpp.Mem.memcpy(Cpp.Ptr<T>, Cpp.Ptr<U>, ulong)
+     1  method Cpp.MIt<E>.Clone()
+   583  method Cpp.Mv.Back(R, ref T, T[])
+    10  method Cpp.Mv.Delete(object?)
+     6  method Cpp.Mv.PostStep(ref Cpp.Ptr<T>, int)
+    11  method Cpp.Mv.Reset(ref T, T)
+   794  method Cpp.Mv.Take(ref T)
+    11  method Cpp.Mv.TakeRef(ref T)
+     1  method Cpp.OFStream.close()
+     3  method Cpp.OFStream.is_open()
+     2  method Cpp.OFStream.open(Cpp.Str, int)
+    16  method Cpp.Opt<T>.Assign(Cpp.Opt<T>)
+    25  method Cpp.Opt<T>.Clone()
+     2  method Cpp.Opt<T>.emplace(T)
+     9  method Cpp.Opt<T>.MoveFrom(Cpp.Opt<T>)
+     1  method Cpp.Opt<T>.reset()
+     1  method Cpp.Opt<T>.Set(T)
+     2  method Cpp.Opt<T>.value_or(T)
+     1  method Cpp.OStream.Manip_quoted(Cpp.CPtr)
+     4  method Cpp.OStream.Manip_quoted(Cpp.Str)
+     4  method Cpp.OStream.Manip_setprecision(long)
+    22  method Cpp.OStream.Put(Cpp.CPtr)
+    10  method Cpp.OStream.Put(Cpp.Str)
+    31  method Cpp.OStream.Put(double)
+     3  method Cpp.OStream.Put(int)
+    37  method Cpp.OStream.Put(sbyte)
+     2  method Cpp.OStream.Put(ulong)
+    10  method Cpp.OStream.write(Cpp.CPtr, long)
+     9  method Cpp.OStream.write(Cpp.Ptr<T>, long)
+     3  method Cpp.OStringStream.str()
+     2  method Cpp.Pair<A, B>.Clone()
+     1  method Cpp.Que<T>.Assign(Cpp.Que<T>)
+     1  method Cpp.Que<T>.Clone()
+    10  method Cpp.R.atof(Cpp.CPtr)
+    20  method Cpp.R.atoi(Cpp.CPtr)
+     9  method Cpp.R.atol(Cpp.CPtr)
+     1  method Cpp.R.Back(int, ref T1, ref T2)
+     1  method Cpp.R.Back(int, ref T1)
+    71  method Cpp.R.Buf(int)
+    29  method Cpp.R.BufOf(int, int[])
+     1  method Cpp.R.Bufs(int, int)
+    16  method Cpp.R.CopyBuf(Cpp.CPtr)
+     2  method Cpp.R.ctime(Cpp.Ptr<long>)
+     1  method Cpp.R.difftime(long, long)
+    22  method Cpp.R.fclose(Cpp.CFile)
+     1  method Cpp.R.feof(Cpp.CFile)
+     5  method Cpp.R.ferror(Cpp.CFile)
+     7  method Cpp.R.fflush(Cpp.CFile)
+     1  method Cpp.R.fgetc(Cpp.CFile)
+    28  method Cpp.R.fgets(Cpp.CPtr, int, Cpp.CFile)
+     1  method Cpp.R.fileno(Cpp.CFile)
+     7  method Cpp.R.fopen(Cpp.CPtr, Cpp.CPtr)
+   682  method Cpp.R.fprintf(Cpp.CFile, Cpp.CPtr, object[])
+     2  method Cpp.R.freadD1(ref double, Cpp.CFile)
+     1  method Cpp.R.freadF1(ref float, Cpp.CFile)
+     6  method Cpp.R.freadI1(ref int, Cpp.CFile)
+     3  method Cpp.R.fseek(Cpp.CFile, long, int)
+     5  method Cpp.R.ftell(Cpp.CFile)
+     2  method Cpp.R.fwriteD1(double, Cpp.CFile)
+     2  method Cpp.R.fwriteF1(float, Cpp.CFile)
+     8  method Cpp.R.fwriteI1(int, Cpp.CFile)
+    36  method Cpp.R.getenv(Cpp.CPtr)
+     5  method Cpp.R.isalnum(int)
+     7  method Cpp.R.isalpha(int)
+     9  method Cpp.R.isdigit(int)
+     6  method Cpp.R.isspace(int)
+  5958  method Cpp.R.Lit(string)
+     8  method Cpp.R.LitN(string, int)
+     8  method Cpp.R.memcmp(Cpp.CPtr, Cpp.CPtr, ulong)
+    16  method Cpp.R.memcpyBuf(Cpp.CPtr, Cpp.CPtr)
+     4  method Cpp.R.RefD(System.Action<double>)
+     2  method Cpp.R.RefF(System.Action<float>)
+   123  method Cpp.R.RefI(System.Action<int>)
+    12  method Cpp.R.RefL(System.Action<long>)
+     4  method Cpp.R.rewind(Cpp.CFile)
+     2  method Cpp.R.setvbuf(Cpp.CFile, Cpp.CPtr, int, ulong)
+    46  method Cpp.R.snprintf(Cpp.CPtr, ulong, Cpp.CPtr, object[])
+    52  method Cpp.R.sscanf(Cpp.CPtr, Cpp.CPtr, object[])
+     5  method Cpp.R.strchr(Cpp.CPtr, int)
+    12  method Cpp.R.strcmp(Cpp.CPtr, Cpp.CPtr)
+    17  method Cpp.R.strlen(Cpp.CPtr)
+     7  method Cpp.R.strncmp(Cpp.CPtr, Cpp.CPtr, ulong)
+    15  method Cpp.R.strncpy(Cpp.CPtr, Cpp.CPtr, ulong)
+     1  method Cpp.R.strrchr(Cpp.CPtr, int)
+    10  method Cpp.R.strstr(Cpp.CPtr, Cpp.CPtr)
+    15  method Cpp.R.strtod(Cpp.CPtr, ref Cpp.CPtr)
+     4  method Cpp.R.strtod(Cpp.CPtr)
+     9  method Cpp.R.strtok(Cpp.CPtr, Cpp.CPtr)
+     1  method Cpp.R.strtol0(Cpp.CPtr, int)
+     4  method Cpp.R.time(Cpp.Ptr<long>)
+    10  method Cpp.R.tolower(int)
+    32  method Cpp.R.toupper(int)
+     1  method Cpp.Set<T>.Assign(Cpp.Set<T>)
+     1  method Cpp.Set<T>.Clone()
+     3  method Cpp.Set<T>.insert(T)
+     1  method Cpp.Std.call_once(Cpp.OnceFlag, System.Action)
+     1  method Cpp.Std.from_chars(Cpp.CPtr, Cpp.CPtr, ref double)
+     3  method Cpp.Std.from_chars(Cpp.CPtr, Cpp.CPtr, ref int)
+     4  method Cpp.Std.from_chars(Cpp.CPtr, Cpp.CPtr, ref uint)
+    14  method Cpp.Std.get0(Cpp.Pair<A, B>)
+    14  method Cpp.Std.get1(Cpp.Pair<A, B>)
+     1  method Cpp.Std.Nop(object?)
+     2  method Cpp.Std.Rethrow(System.Exception)
+    16  method Cpp.Std.swap(ref T, ref T)
+     8  method Cpp.StdAlgo.Sort(T[], long, long, System.Func<T, T, bool>)
+     2  method Cpp.StdAlgo.StableSort(T[], long, long, System.Func<T, T, bool>)
+    17  method Cpp.Stk<T>.empty()
+    44  method Cpp.Stk<T>.pop()
+    63  method Cpp.Stk<T>.push(T)
+     2  method Cpp.Stk<T>.size()
+    58  method Cpp.Stk<T>.top()
+    54  method Cpp.Str.append(Cpp.CPtr, ulong)
+    57  method Cpp.Str.append(Cpp.CPtr)
+    94  method Cpp.Str.append(Cpp.Str)
+    11  method Cpp.Str.append(int)
+     1  method Cpp.Str.assign(Cpp.CPtr, ulong)
+    75  method Cpp.Str.Assign(Cpp.CPtr)
+     1  method Cpp.Str.assign(Cpp.Ptr<sbyte>, Cpp.Ptr<sbyte>)
+     3  method Cpp.Str.assign(Cpp.Str)
+   336  method Cpp.Str.Assign(Cpp.Str)
+    19  method Cpp.Str.back()
+    17  method Cpp.Str.begin()
+   193  method Cpp.Str.c_str()
+   520  method Cpp.Str.Cat(Cpp.CPtr, Cpp.Str)
+   853  method Cpp.Str.Cat(Cpp.Str, Cpp.CPtr)
+   331  method Cpp.Str.Cat(Cpp.Str, Cpp.Str)
+     4  method Cpp.Str.Cat(Cpp.Str, int)
+    32  method Cpp.Str.clear()
+  1532  method Cpp.Str.Clone()
+     8  method Cpp.Str.compare(ulong, ulong, Cpp.Str)
+   116  method Cpp.Str.data()
+   318  method Cpp.Str.empty()
+     9  method Cpp.Str.end()
+   803  method Cpp.Str.EqLit(Cpp.CPtr)
+    55  method Cpp.Str.Equals(Cpp.Str?)
+     5  method Cpp.Str.erase(ulong, ulong)
+     5  method Cpp.Str.find_first_not_of(Cpp.CPtr, ulong)
+     2  method Cpp.Str.find_first_not_of(int, ulong)
+     4  method Cpp.Str.find_first_of(Cpp.CPtr, ulong)
+     4  method Cpp.Str.find_last_not_of(Cpp.CPtr, ulong)
+     1  method Cpp.Str.find_last_of(int, ulong)
+     6  method Cpp.Str.find(Cpp.CPtr, ulong)
+    28  method Cpp.Str.find(int, ulong)
+    12  method Cpp.Str.front()
+    95  method Cpp.Str.MoveFrom(Cpp.Str)
+     8  method Cpp.Str.pop_back()
+     8  method Cpp.Str.push_back(int)
+     2  method Cpp.Str.remove_prefix(ulong)
+     3  method Cpp.Str.reserve(ulong)
+     5  method Cpp.Str.resize(ulong, int)
+     9  method Cpp.Str.rfind(Cpp.CPtr, ulong)
+     2  method Cpp.Str.rfind(int, ulong)
+   330  method Cpp.Str.size()
+     2  method Cpp.Str.starts_with(Cpp.CPtr)
+     1  method Cpp.Str.starts_with(Cpp.Str)
+     5  method Cpp.Str.stod(Cpp.Str, Cpp.Ptr<ulong>)
+    49  method Cpp.Str.substr(ulong, ulong)
+     8  method Cpp.Str.to_string(double)
+    33  method Cpp.Str.to_string(int)
+     4  method Cpp.Str.to_string(long)
+     2  method Cpp.Str.to_string(uint)
+   236  method Cpp.Str.to_string(ulong)
+     1  method Cpp.Str.ToString()
+     1  method Cpp.Streams.getline(Cpp.IStream, Cpp.Str, sbyte)
+    10  method Cpp.Streams.getline(Cpp.IStream, Cpp.Str)
+     1  method Cpp.Sys.hardware_concurrency()
+     5  method Cpp.TimePoint.Clone()
+     3  method Cpp.TimePoint.now()
+    13  method Cpp.UMap<K, V>.Assign(Cpp.UMap<K, V>)
+    16  method Cpp.UMap<K, V>.Clone()
+     7  method Cpp.UMap<K, V>.emplace(K, V)
+    70  method Cpp.UMap<K, V>.Index(K)
+     5  method Cpp.UMapC<K, V, H, E>.Assign(Cpp.UMapC<K, V, H, E>)
+     8  method Cpp.UMapC<K, V, H, E>.Clone()
+     1  method Cpp.USet<T>.insert(T)
+     1  method Cpp.Variant.Assign(Cpp.Variant)
+     1  method Cpp.Variant.Clone()
+     1  method Cpp.Variant.MoveFrom(Cpp.Variant)
+     1  method Cpp.Variant.Set(bool)
+     1  method Cpp.Variant.Set(Cpp.Str)
+     1  method Cpp.Variant.Set(double)
+     1  method Cpp.Variant.Set(int)
+     5  method Cpp.Vec<T>.assign(Cpp.Iter<T>, Cpp.Iter<T>)
+  2562  method Cpp.Vec<T>.Assign(Cpp.Vec<T>)
+  1194  method Cpp.Vec<T>.assign(ulong, T)
+     3  method Cpp.Vec<T>.at(ulong)
+    95  method Cpp.Vec<T>.back()
+   585  method Cpp.Vec<T>.begin()
+     7  method Cpp.Vec<T>.capacity()
+   360  method Cpp.Vec<T>.clear()
+  3815  method Cpp.Vec<T>.Clone()
+   282  method Cpp.Vec<T>.data()
+    46  method Cpp.Vec<T>.emplace_back(T)
+   393  method Cpp.Vec<T>.empty()
+   358  method Cpp.Vec<T>.end()
+    13  method Cpp.Vec<T>.Eq(Cpp.Vec<T>, Cpp.Vec<T>)
+     4  method Cpp.Vec<T>.erase(Cpp.Iter<T>, Cpp.Iter<T>)
+   115  method Cpp.Vec<T>.erase(Cpp.Iter<T>)
+    43  method Cpp.Vec<T>.front()
+     7  method Cpp.Vec<T>.insert(Cpp.Iter<T>, Cpp.Iter<T>, Cpp.Iter<T>)
+     1  method Cpp.Vec<T>.insert(Cpp.Iter<T>, Cpp.Ptr<T>, Cpp.Ptr<T>)
+    92  method Cpp.Vec<T>.insert(Cpp.Iter<T>, T)
+     2  method Cpp.Vec<T>.insert(Cpp.Iter<T>, T[])
+   291  method Cpp.Vec<T>.MoveFrom(Cpp.Vec<T>)
+     3  method Cpp.Vec<T>.MoveFrom(T[])
+     6  method Cpp.Vec<T>.pop_back()
+  1055  method Cpp.Vec<T>.push_back(T)
+     4  method Cpp.Vec<T>.rbegin()
+     4  method Cpp.Vec<T>.rend()
+    69  method Cpp.Vec<T>.reserve(ulong)
+   169  method Cpp.Vec<T>.resize(ulong, T)
+   314  method Cpp.Vec<T>.resize(ulong)
+   304  method Cpp.Vec<T>.shrink_to_fit()
+  2281  method Cpp.Vec<T>.size()
+     9  method Cpp.Vec<T>.swap(Cpp.Vec<T>)
+   139  new Cpp.Atomic<T>()
+    14  new Cpp.Atomic<T>(T)
+     6  new Cpp.CondVar()
+    28  new Cpp.Defer(System.Action)
+    10  new Cpp.ErrorCode()
+    19  new Cpp.FsPath()
+     5  new Cpp.FsPath(Cpp.CPtr)
+     8  new Cpp.FsPath(Cpp.Str)
+     9  new Cpp.IFStream(Cpp.FsPath, int)
+     1  new Cpp.IFStream(Cpp.Str, int)
+    14  new Cpp.InvalidArgument(Cpp.Str)
+     1  new Cpp.IStringStream(Cpp.Str, int)
+     7  new Cpp.IStringStream(Cpp.Str)
+     7  new Cpp.Iter<T>(T[], long)
+     5  new Cpp.Lock()
+    29  new Cpp.Map<K, V>(System.Func<K, K, bool>?, System.Func<V>?)
+     8  new Cpp.Mutex()
+     2  new Cpp.OFStream()
+     2  new Cpp.OFStream(Cpp.CPtr, int)
+     2  new Cpp.OFStream(Cpp.FsPath, int)
+     2  new Cpp.OnceFlag()
+    48  new Cpp.Opt<T>()
+     9  new Cpp.Opt<T>(T)
+     2  new Cpp.OStringStream()
+     1  new Cpp.OStringStream(int)
+     1  new Cpp.OutOfRange(Cpp.Str)
+   289  new Cpp.Pair<A, B>(A, B)
+   214  new Cpp.Ptr<T>(object?, Cpp.RefAt<T>)
+  1930  new Cpp.Ptr<T>(T[], long)
+     3  new Cpp.Que<T>()
+   150  new Cpp.RuntimeError(Cpp.Str)
+     5  new Cpp.Set<T>(System.Func<T, T, bool>?)
+     4  new Cpp.Stk<T>()
+   701  new Cpp.Str()
+     2  new Cpp.Str(Cpp.CPtr, ulong)
+   650  new Cpp.Str(Cpp.CPtr)
+     7  new Cpp.Str(Cpp.Str)
+     7  new Cpp.Str(ulong, int)
+     2  new Cpp.Thread()
+     1  new Cpp.TupN(object[])
+     7  new Cpp.UMap<K, V>(Cpp.Pair<K, V>[], System.Func<K, ulong>?, System.Func<K, K, bool>?)
+    39  new Cpp.UMap<K, V>(System.Func<K, ulong>?, System.Func<K, K, bool>?, System.Func<V>?)
+    16  new Cpp.UMapC<K, V, H, E>(System.Func<V>?)
+     1  new Cpp.USet<T>(System.Func<T, ulong>?, System.Func<T, T, bool>?)
+     3  new Cpp.Variant()
+  5775  new Cpp.Vec<T>()
+    48  new Cpp.Vec<T>(System.Func<T>)
+    21  new Cpp.Vec<T>(T[])
+     3  new Cpp.Vec<T>(ulong, System.Func<T>)
+    75  new Cpp.Vec<T>(ulong, T)
+    62  new Cpp.Vec<T>(ulong)
+     7  new System.InvalidOperationException
+    34  new System.NotImplementedException
+   117  operator Cpp.CPtr.op_Addition
+    11  operator Cpp.CPtr.op_Equality
+    16  operator Cpp.CPtr.op_Inequality
+     7  operator Cpp.CPtr.op_LessThan
+   211  operator Cpp.Iter<T>.op_Addition
+    17  operator Cpp.Iter<T>.op_Equality
+     3  operator Cpp.Iter<T>.op_Increment
+    11  operator Cpp.Iter<T>.op_Subtraction
+    52  operator Cpp.MIt<E>.op_Equality
+   184  operator Cpp.Ptr<T>.op_Addition
+     2  operator Cpp.Ptr<T>.op_Equality
+     6  operator Cpp.Ptr<T>.op_Inequality
+    32  operator Cpp.Ptr<T>.op_Subtraction
+     4  operator Cpp.RevIter<T>.op_Equality
+     4  operator Cpp.RevIter<T>.op_Increment
+     1  operator Cpp.TimePoint.op_Subtraction
+     6  property Cpp.Box<T>.V (ref)
+   113  property Cpp.CPtr.IsNull
+   158  property Cpp.CPtr.this[][int]
+    21  property Cpp.Iter<T>.Deref (ref)
+    57  property Cpp.MIt<E>.Deref
+  1080  property Cpp.Ptr<T>.Deref (ref)
+    86  property Cpp.Ptr<T>.IsNull
+  1857  property Cpp.Ptr<T>.this[][int] (ref)
+   124  property Cpp.Ptr<T>.this[][long] (ref)
+   150  property Cpp.Ptr<T>.this[][ulong] (ref)
+    14  property Cpp.RevIter<T>.Deref (ref)
+   151  property Cpp.Str.this[][ulong] (ref)
+ 13305  property Cpp.Vec<T>.this[][ulong] (ref)
+     4  static field Cpp.Less<T>.Fn
+     3  static field Cpp.R.Slot
+    17  static field Cpp.R.stderr_
+     1  static field Cpp.R.stdout_
+  2850  static field Cpp.Raw.V
+    27  static field Cpp.Std.QNaN
+   316  System call double.IsFinite(double)
+     2  System call double.IsInfinity(double)
+    17  System call double.IsNaN(double)
+  1196  System call object.ReferenceEquals(object?, object?)
+     3  System call System.Array.Fill(double[], double)
+     3  System call System.Array.Fill(long[], long)
+     1  System call System.IO.File.Exists(string?)
+   336  System call System.Math.Abs(double)
+    13  System call System.Math.Acos(double)
+     5  System call System.Math.Asin(double)
+     3  System call System.Math.Atan(double)
+     1  System call System.Math.Atan2(double, double)
+     2  System call System.Math.Cbrt(double)
+     5  System call System.Math.Ceiling(double)
+     3  System call System.Math.CopySign(double, double)
+    33  System call System.Math.Cos(double)
+     1  System call System.Math.Cosh(double)
+    48  System call System.Math.Exp(double)
+    52  System call System.Math.Floor(double)
+    20  System call System.Math.Log(double)
+    13  System call System.Math.Log10(double)
+     2  System call System.Math.Log2(double)
+   200  System call System.Math.Pow(double, double)
+    37  System call System.Math.Sin(double)
+     1  System call System.Math.Sinh(double)
+   115  System call System.Math.Sqrt(double)
+     8  System call System.Math.Tan(double)
+     2  System call System.Math.Tanh(double)
+     1  System call System.Math.Truncate(double)
+   159  System property System.Array.Length
+   344  type Cpp.Algo
+   544  type Cpp.Arr
+   186  type Cpp.Atomic<T>
+     7  type Cpp.Box<T>
+   112  type Cpp.Bytes
+    37  type Cpp.CFile
+     9  type Cpp.CondVar
+    94  type Cpp.Conv
+    16  type Cpp.CppException
+  1145  type Cpp.CPtr
+    11  type Cpp.CSpan<T>
+    30  type Cpp.Dbg
+    56  type Cpp.Defer
+    43  type Cpp.Dtor
+    21  type Cpp.ErrorCode
+     1  type Cpp.FileStatus
+    13  type Cpp.FromCharsResult
+    18  type Cpp.Fs
+    77  type Cpp.FsPath
+     1  type Cpp.IBinFn<K>
+   598  type Cpp.ICopy<T>
+    20  type Cpp.IFStream
+     1  type Cpp.IHashFn<K>
+    14  type Cpp.InvalidArgument
+   111  type Cpp.IStream
+    16  type Cpp.IStringStream
+   259  type Cpp.Iter<T>
+     4  type Cpp.Less<T>
+    25  type Cpp.LibM
+    10  type Cpp.Lock
+  1065  type Cpp.M
+    56  type Cpp.Map<K, V>
+    91  type Cpp.Mem
+    26  type Cpp.MemPtr<TO, TF>
+   105  type Cpp.MIt<E>
+    14  type Cpp.Mutex
+  1415  type Cpp.Mv
+    12  type Cpp.OFStream
+     3  type Cpp.OnceFlag
+    90  type Cpp.Opt<T>
+    98  type Cpp.OStream
+     6  type Cpp.OStringStream
+     1  type Cpp.OutOfRange
+   617  type Cpp.Pair<A, B>
+  3610  type Cpp.Ptr<T>
+     4  type Cpp.Que<T>
+  7405  type Cpp.R
+  3448  type Cpp.Raw
+   214  type Cpp.RefAt<T>
+     2  type Cpp.RefGet<T>
+    12  type Cpp.RevIter<T>
+   151  type Cpp.RuntimeError
+     9  type Cpp.Set<T>
+    83  type Cpp.Std
+    10  type Cpp.StdAlgo
+     8  type Cpp.Stk<T>
+  7034  type Cpp.Str
+    11  type Cpp.Streams
+     1  type Cpp.Sys
+     3  type Cpp.Thread
+    16  type Cpp.TimePoint
+     8  type Cpp.TupN
+    90  type Cpp.UMap<K, V>
+    28  type Cpp.UMapC<K, V, H, E>
+     2  type Cpp.USet<T>
+    12  type Cpp.Variant
+ 12072  type Cpp.Vec<T>
+   170  type System.Action
+   245  type System.Exception
+   325  type System.Func
+    20  type System.IDisposable
+     7  type System.InvalidOperationException
+    34  type System.NotImplementedException

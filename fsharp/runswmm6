@@ -1,0 +1,6 @@
+#!/bin/bash
+# runswmm6 - the F# SWMM6 engine: runswmm6 model.inp report.rpt [output.out], as OpenSWMM 6's command line.
+# Runs bin/runswmm6.dll (made by build.sh) on the .NET runtime; SWMM_FS_BIN overrides the folder.
+# Written by Claude (Anthropic) for Robert Dickinson's SWMM6 ports; see README.md.
+H=$(cd "$(dirname "$0")" && pwd)
+exec dotnet "${SWMM_FS_BIN:-$H/bin}/runswmm6.dll" "$@"

@@ -1,0 +1,22 @@
+     169  analysis: locals and parameters in reference cells
+     172  breaks: by flag
+     427  breaks: last in a switch section
+    1339  continues: at the end of the body
+      85  continues: by flag
+    4756  early exits made into an else
+       4  goto: methods made into a dispatch loop
+      12  gotos: at the end of a segment
+       1  gotos: by flag
+     563  lambdas: hoisted before their statement
+     407  lambdas: inline
+       9  loops: do-while
+    2992  loops: while/for
+      72  method groups made into delegates
+     784  returns: by flag
+    7361  returns: in tail position
+      70  statements dropped after a jump
+     489  statements guarded by flags
+     758  static field initializers
+     873  static fields
+     137  switches
+      28  using declarations

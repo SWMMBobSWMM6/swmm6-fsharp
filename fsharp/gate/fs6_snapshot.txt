@@ -1,0 +1,10 @@
+# The engine the fs6_c* and fs6_x* runs used: /dev/shm/fs6_snap/bin, built by fsharp/build.sh (OUT=/dev/shm/fs6/bin) at 11:12 on 2026-11-10 from the
+# sources below and copied there before the runs; committed as 6ca72c1 (the files hashed here are unchanged in 3a71d3b).
+43b613217891d3ffe3c48e9f6acef2375164fab1544c261684d3176698a42216  bin/runswmm6.dll
+f9b807b6a30f4022605cfc2a150d46dc29333cffcabdf44ab0bc6b910e602eee  fsharp/gen/Engine.fs
+35de6c4bbff9ff41e79941f9c565b12f9d6ffe76443be7507a640e392b1a1bdf  fsharp/runtime/LibM.fs
+63812de8b7c8b9db96b4e5a8a52bfdfdc5a7b671ab4da0acd032fd9f8e412e7f  fsharp/runtime/PrimeList.fs
+000f25cd8d673a9ac75fcd7f18630bb15e31e4db92b5509a553d92575f19e697  fsharp/runtime/Program.fs
+1a821ab9e687c844f3567514402c38f16aa996381fd5b195dc0605fe1880bac9  fsharp/runtime/Runtime.fs
+caba89c64e2aad61e6e6696c00cab8147ff4d3d8beed505f4e828949385b60f7  fsharp/runtime/StdAlgo.fs
+commit 6ca72c1

@@ -1,0 +1,2 @@
+ompinc/omp.h: GCC 13's libgomp omp.h with its GCC-only attribute form __malloc__(omp_free) reduced to __malloc__,
+so clang can parse the engine's #include <omp.h>. Made by: sed -E 's/__malloc__ *\([^)]*\)/__malloc__/g'

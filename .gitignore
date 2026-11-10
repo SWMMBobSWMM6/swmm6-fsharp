@@ -1,0 +1,27 @@
+# build outputs and run results
+bin/
+cs/bin/
+cs/gen.new/
+gate/ref_outputs/
+gate/results/
+__pycache__/
+*.pyc
+tests/*/build/
+cs/bin2/
+cs/binG/
+go/bin/
+java/classes/
+java/bin/
+cs/bin5/
+ts/dist/
+ts/node_modules/
+f90/build/
+f90/runtime/stub/mod/
+*.mod
+*.smod
+*.o
+go/bin2/
+go/binX/
+gate/ref_outputs_extra/
+cs/binX/
+fsharp/obj/

@@ -1,0 +1,18 @@
+== clean copy of 3a71d3b in /dev/shm/fs6_v
+== the translator: tools/cs2x/build_fs.sh
+== the engine, regenerated from cs/gen into /dev/shm/fs6_v/regen/gen and compared with fsharp/gen/Engine.fs
+wrote Engine.fs: 1257 types, 1 TODO kinds, 1 TODO sites
+engine: Engine.fs, 148048 lines, byte-identical to the commit
+cs2fs_todo.txt: byte-identical to the commit
+cs2fs_runtime.txt: byte-identical to the commit
+cs2fs_stats.txt: byte-identical to the commit
+== the generated part of the runtime, written again from cs/runtime/PrimeList.cs
+runtime/PrimeList.fs: byte-identical to the commit
+== build
+built; compiler warnings: 9
+-rw-r--r-- 1 root root 7955968 Nov 10 11:26 fsharp/bin/runswmm6.dll
+5add447fe1b9b94eddb14e280af55840330d9b28c9783eccd3ce0086ccb58a27  runswmm6.dll (fsc --deterministic+, paths mapped to /_/fsharp)
+
+real	3m50.419s
+user	3m42.654s
+sys	0m3.521s

@@ -1,0 +1,4 @@
+queued 2026-11-10T14:13:41-05:00 wait=6000 bin=/home/claude/swmm6-ports/fsharp/bin
+started 2026-11-10T14:51:03-05:00
+ended 2026-11-10T14:59:33-05:00 rc=0
+note: the engine was /dev/shm/fs6_v/fsharp/runswmm6_saves.sh, the clean copy of commit 3a71d3b built by gate/rerun_build.sh (gate/fs6_v_build.txt), whose runswmm6 runs that copy's bin/runswmm6.dll; the bin= above is run_chunk.sh's default, which the copy's wrapper does not use
